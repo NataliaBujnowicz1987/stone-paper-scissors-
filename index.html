@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone, paper, scissors?</title>
+    <link href='style.css' rel='stylesheet' />
+</head>
+<body>
+
+    <header>
+        <h1>Stone, paper or scissors?</h1>
+        <h2>Which one do you choose?</h2>
+    </header>
+
+    <div class='select-options'>
+        <div class='select-options--option'><img data-option='stone' src='assets/stone.png' alt='stone'/></div>
+        <div class='select-options--option'><img data-option='paper' src='assets/paper.png' alt='paper'/></div>
+        <div class='select-options--option'><img data-option='scissors' src='assets/scissors.png' alt='scissors'/></div>
+    </div>
+
+    <button>PLAY</button>
+
+    <div class='results'>
+        <div class='results-players'>
+            <div class='results-players--player'>
+                <h2>Player:</h2>
+                <p data-summary='player-choice'></p>
+            </div>
+            <div class='results-players--computer'>
+                <h2>Computer:</h2>
+                <p data-summary='computer-choice'></p>
+            </div>
+        </div>
+        <div class='results-winner'>
+            <h2>Game result:</h2>
+            <p data-summary='winner'></p>
+        </div>
+    </div>
+
+    <div class='game-statistics'>
+        <p class='game-statistics--games'>Number of games: <span>0</span></p>
+        <p class='game-statistics--wins'>Number of wins: <span>0</span></p>
+        <p class='game-statistics--losses'>Number of losses: <span>0</span></p>
+        <p class='game-statistics--draws'>Number of draws: <span>0</span></p>
+    </div>
+
+    <script src='game.js'></script>
+    
+</body>
+</html>
